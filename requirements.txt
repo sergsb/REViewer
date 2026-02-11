@@ -1,0 +1,7 @@
+numpy>=1.23
+pandas>=1.5
+PyQt6>=6.4
+pyqtgraph>=0.13
+rdkit>=2023.03
+umap-learn>=0.5
+matplotlib>=3.5

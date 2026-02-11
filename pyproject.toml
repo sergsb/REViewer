@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "reviewer"
+version = "0.1.0"
+description = "REViewer — Results Explorer & Viewer for molecular generative models"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Sergey Sosnin" },
+]
+
+keywords = ["chemistry", "molecular-generation", "REINVENT", "visualization"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "PyQt6>=6.4",
+    "pyqtgraph>=0.13",
+    "rdkit>=2023.03",
+    "umap-learn>=0.5",
+    "matplotlib>=3.5",
+]
+
+[project.optional-dependencies]
+build = [
+    "pyinstaller>=6.0",
+]
+
+[project.scripts]
+reviewer = "reviewer.app:main"
+
+[project.gui-scripts]
+reviewer-gui = "reviewer.app:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/reviewer"]
