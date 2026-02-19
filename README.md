@@ -45,6 +45,7 @@ MIT
 ## Citation 
 If you use this program please cite:
 
-> *Evaluation of Custom REINVENT Priors Trained on Synthetically Accessible Spaces for Generative Molecular Design* (Article in Preparation)
+`Sergey Sosnin, Oleksandr Zhadovets, Anna Kapeliukha, et al. Evaluation of Custom REINVENT Priors Trained on Synthetically Accessible Chemical Spaces for Generative Molecular Design. ChemRxiv. 18 February 2026.
+DOI: https://doi.org/10.26434/chemrxiv.15000188/v1`
 
 
